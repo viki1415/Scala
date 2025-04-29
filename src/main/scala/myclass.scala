@@ -105,18 +105,6 @@ object HourglassPattern {
 }
 
 //Pattern 5: Hollow Diamond
-object hollowdiamnod {
-  def main(args: Array[String]): Unit = {
-    val row = 2
-    for(i<-row to 1 by -1){
-      val spaces = " " * (row - i)
-      val stars = "*" * (2 * i - 1)
-      println(spaces + stars)
-    }
-  }
-}
-
-
 object hollowdiamond {
   def main(args: Array[String]): Unit={
     val n = 3
@@ -136,3 +124,42 @@ object hollowdiamond {
     }
   }
 }
+
+
+//1.Right-Angled Triangle
+object righttriangle {
+  def main(args: Array[String]): Unit = {
+    for(i<-1 to 5){
+      for(j<-1 to i){
+        print("*"+" ")
+      }
+      println(" ")
+    }
+  }
+}
+
+
+//2.Inverted Right-Angled Triangle
+object inverttriangle {
+  def main(args: Array[String]): Unit = {
+    for(i<-5 to 1 by -1){
+      for(j<-1 to i){
+        print("*"+" ")
+      }
+      println(" ")
+    }
+  }
+}
+
+//3.Pyramid
+object pyramid {
+  def main(args: Array[String]): Unit={
+    val row = 5
+    for (i <- 1 to row) {
+      val spaces = " " * (row - i)
+      val stars = "*" * (2 * i - 1)
+      println(spaces + stars)
+    }
+  }
+}
+
